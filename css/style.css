@@ -1,8 +1,10 @@
 body {
-    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
 }
 
 section > * {
+    overflow-x: hidden;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -492,10 +494,16 @@ p {
     .header .bannerHolder .bubbleHolder {
         display: none;       
     }
-        .header .bannerHolder {
+    .header .bannerHolder {
         display: grid;
-        grid-template-columns: 1fr 0.5fr;
+        grid-template-columns: 1fr 0.4fr;
         position: relative;
+    }
+    .header .bannerHolder .buttonHolder button {
+        width: 100px;
+    }
+    .header .bannerHolder .buttonHolder p {
+        display: none;
     }
     .features .infoHolder {
         display: grid;
@@ -510,9 +518,16 @@ p {
     .maleMask .info h2{
         text-align: center;
     }
-
     .femaleMask .info h2{
         text-align: center;
+    }
+    .priceList .price .priceListHolder{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 200px;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 5%;    
     }
     
 }
