@@ -142,6 +142,39 @@ p {
     cursor: pointer;
     background-color: #553684;
 }
+
+.dropdownHeader .dropdownCategories,
+.dropdownHeader .dropdown__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownHeader li {
+  padding: 10px;
+  position: relative;
+  font-weight: normal;
+}
+
+.dropdownHeader li a {
+  text-decoration: none;
+}
+
+.dropdownHeader .dropdownCategory .dropdown__menu {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 200px;
+  top: 20px;
+  right: 0;
+  z-index: 999;
+}
+
+.dropdownHeader .dropdownCategory:hover .dropdown__menu {
+  display: block;
+  color: #472B75;
+}
 /* end of header section */
 
 /* specialButtons section */
@@ -494,6 +527,9 @@ p {
    }
    .header .navBar #menuIcon img{
        width: 20px;
+       transform: translateX(-40);
+       margin-left: -10px;
+       transform: translateY(-10px);
    }
     .header .bannerHolder .bubbleHolder {
         display: none;       
@@ -533,5 +569,4 @@ p {
         align-items: center;
         grid-gap: 5%;    
     }
-    
-}
+} 
