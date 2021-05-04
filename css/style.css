@@ -15,22 +15,6 @@ h2{
     font-size: large;
 }
 
-h3{
-    font-size: medium;
-}
-
-h4 {
-
-}
-
-h5 {
-
-}
-
-h6 {
-
-}
-
 p {
     font-size: smaller;
 }
@@ -216,6 +200,10 @@ p {
 .features .title {
     padding: 8% 0%;
     text-align: center;
+}
+
+.features .title h2 {
+    color: #482A74;
 }
 
 .features .infoHolder {
@@ -501,5 +489,30 @@ p {
    .header .navBar #menuIcon img{
        width: 20px;
    }
+    .header .bannerHolder .bubbleHolder {
+        display: none;       
+    }
+        .header .bannerHolder {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        position: relative;
+    }
+    .features .infoHolder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        grid-template-areas: 
+        'part1'
+        'middle'
+        'part2';
+        padding-bottom: 8%;
+    }
+    .maleMask .info h2{
+        text-align: center;
+    }
 
-  }
+    .femaleMask .info h2{
+        text-align: center;
+    }
+    
+}
